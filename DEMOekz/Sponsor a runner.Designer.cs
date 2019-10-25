@@ -463,7 +463,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Marathon Skills 2017 - Sponsor a runner";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form5_FormClosing);
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
