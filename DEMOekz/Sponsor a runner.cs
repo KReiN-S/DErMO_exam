@@ -252,5 +252,13 @@ namespace DEMOekz
             Form f1 = Application.OpenForms[0];
             f1.Show();
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            //отмена
+            Sponsorship_confirmation f6 = new Sponsorship_confirmation();
+            f6.Show();
+            Hide();
+        }
     }
 }
