@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sponsorship_confirmation));
             this.runnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dEMODataSet1 = new DEMOekz.DEMODataSet();
             this.label15 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dEMODataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.runnerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dEMODataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dEMODataSetBindingSource)).BeginInit();
@@ -71,7 +71,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.label15.Location = new System.Drawing.Point(522, 401);
+            this.label15.Location = new System.Drawing.Point(541, 416);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(109, 58);
             this.label15.TabIndex = 112;
@@ -82,11 +82,11 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.label14.Location = new System.Drawing.Point(414, 344);
+            this.label14.Location = new System.Drawing.Point(499, 355);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(321, 31);
+            this.label14.Size = new System.Drawing.Size(180, 31);
             this.label14.TabIndex = 111;
-            this.label14.Text = "Сумма пожертвования";
+            this.label14.Text = "Фонд кошек";
             // 
             // dEMODataSetBindingSource
             // 
@@ -104,7 +104,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(533, 561);
+            this.button2.Location = new System.Drawing.Point(540, 531);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(98, 42);
             this.button2.TabIndex = 98;
@@ -116,21 +116,22 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(208, 171);
+            this.label3.Location = new System.Drawing.Point(284, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(746, 75);
+            this.label3.Size = new System.Drawing.Size(654, 50);
             this.label3.TabIndex = 95;
-            this.label3.Text = resources.GetString("label3.Text");
+            this.label3.Text = "             Спасибо за поддержку бегуна в Marathon Skills 2016!\r\nВаше пожертвова" +
+    "ние пойдет в его благотворительную организацию\r\n";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(471, 125);
+            this.label2.Location = new System.Drawing.Point(327, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(214, 31);
+            this.label2.Size = new System.Drawing.Size(557, 31);
             this.label2.TabIndex = 94;
-            this.label2.Text = "Спонсор бегуна";
+            this.label2.Text = "Спасибо за вашу спонсорскую поддержку!";
             // 
             // button1
             // 
@@ -140,6 +141,7 @@
             this.button1.TabIndex = 93;
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label1
             // 
@@ -188,11 +190,22 @@
             this.dEMODataSet1BindingSource.DataSource = this.dEMODataSet1;
             this.dEMODataSet1BindingSource.Position = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(463, 286);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(272, 25);
+            this.label5.TabIndex = 113;
+            this.label5.Text = "Иван Прудов(204) из Russia \r\n";
+            // 
             // Sponsorship_confirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button2);
@@ -204,7 +217,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Name = "Sponsorship_confirmation";
-            this.Text = "Sponsorship_confirmation";
+            this.Text = "Marathon skills 2017 - Sponsorship confirmation";
+            this.Load += new System.EventHandler(this.Sponsorship_confirmation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.runnerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dEMODataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dEMODataSetBindingSource)).EndInit();
@@ -235,5 +249,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.BindingSource dEMODataSet1BindingSource;
+        private System.Windows.Forms.Label label5;
     }
 }

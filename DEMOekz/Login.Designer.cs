@@ -84,6 +84,7 @@
             this.button5.TabIndex = 19;
             this.button5.Text = "Login";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // label4
             // 
@@ -151,6 +152,7 @@
             this.button2.TabIndex = 27;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // textBox1
             // 

@@ -109,6 +109,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Я участвовал ранее";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
@@ -118,6 +119,7 @@
             this.button3.TabIndex = 16;
             this.button3.Text = "Я новый участник";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Form2
             // 
@@ -137,6 +139,7 @@
             this.Name = "Form2";
             this.Text = "Marathon Skills 2017 – Register as a runner";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

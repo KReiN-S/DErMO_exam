@@ -222,20 +222,32 @@ namespace DEMOekz
 
             MessageBox.Show(ok.ToString());
 
-            /*
-                string query1 = "INSERT INTO Sponsorship (SponsorName, RegistrationId, Amount) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "','" + textBox6.Text + "','" + textBox9.Text + "','" + textBox11.Text + "','" + textBox10.Text + "','" + comboBox1.SelectedValue + "','" + textBox8.Text + "')";
+            
+            string query1 = "INSERT INTO Sponsorship (SponsorName, RegistrationId, Amount) VALUES ('Фонд Кошек','" + comboBox1.SelectedIndex + "','" +doll + "')";
             SqlCommand command2 = new SqlCommand(query1, myConnection);
             try
             {
                 if (command2.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show("Data updated successfully");
+
+
+
+                    Sponsorship_confirmation f6 = new Sponsorship_confirmation();
+                    f6.txt5 = comboBox1.SelectedValue.ToString();
+                    f6.txt14 = "123";
+                    f6.hww = doll;
+                    f6.Show();
+                    Hide();
+
+
+
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }*/
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -256,9 +268,9 @@ namespace DEMOekz
         private void Button2_Click(object sender, EventArgs e)
         {
             //отмена
-            Sponsorship_confirmation f6 = new Sponsorship_confirmation();
-            f6.Show();
-            Hide();
+            Form f1 = Application.OpenForms[0];
+            f1.Show();
+            this.Close();
         }
     }
 }

@@ -43,5 +43,13 @@ namespace DEMOekz
             Form f1 = Application.OpenForms[0];
             f1.Show();
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            how_long_is_a_marathon f7 = new how_long_is_a_marathon();
+            f7.Show();
+
+            this.Hide();
+        }
     }
 }

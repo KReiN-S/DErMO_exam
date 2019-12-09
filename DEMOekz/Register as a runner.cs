@@ -31,5 +31,10 @@ namespace DEMOekz
             Form f1 = Application.OpenForms[0];
             f1.Show();
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -51,6 +51,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DEMODataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="how_long_is_a_marathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="how_long_is_a_marathon.Designer.cs">
+      <DependentUpon>how_long_is_a_marathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List of charities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List of charities.Designer.cs">
+      <DependentUpon>List of charities.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     <Compile Include="Register as a runner.Designer.cs">
       <DependentUpon>Register as a runner.cs</DependentUpon>
     </Compile>
+    <Compile Include="register runner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register runner.Designer.cs">
+      <DependentUpon>register runner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sponsor a runner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +113,12 @@
     <Compile Include="Sponsorship confirmation.Designer.cs">
       <DependentUpon>Sponsorship confirmation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="how_long_is_a_marathon.resx">
+      <DependentUpon>how_long_is_a_marathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List of charities.resx">
+      <DependentUpon>List of charities.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register as a runner.resx">
       <DependentUpon>Register as a runner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register runner.resx">
+      <DependentUpon>register runner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sponsor a runner.resx">
       <DependentUpon>Sponsor a runner.cs</DependentUpon>

@@ -25,5 +25,24 @@ namespace DEMOekz
 
             this.Close();
         }
+        public string txt14;
+        public string txt5;
+        public int hww;
+
+        private void Sponsorship_confirmation_Load(object sender, EventArgs e)
+        {
+            label14.Text = "Фонд кошек";
+            label5.Text = txt5;
+            label15.Text = "$" + hww;
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Form f1 = Application.OpenForms[1];
+            f1.Show();
+
+
+            this.Close();
+        }
     }
 }

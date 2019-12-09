@@ -31,5 +31,25 @@ namespace DEMOekz
             Form f1 = Application.OpenForms[0];
             f1.Show();
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            //login
+
+            //sql query get with login and pass get "who this gay" and goto nyzhnaya forma
+
+            //mne len` delat` formi
+            //AAAAAAAAAAAAAAAAAAAAAAAAAAA
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            //cancel
+
+            Form f1 = Application.OpenForms[0];
+            f1.Show();
+
+            this.Close();
+        }
     }
 }
